@@ -6,9 +6,10 @@ set(LIBRARY_OUTPUT_PATH ${CMAKE_BINARY_DIR})
 set(GRAPHICS_LIBS "${PROJECT_SOURCE_DIR}/dependencies")
 
 
-add_library(3DorkEngine SHARED libmain.cpp libmain.h functions.cpp functions.h pch.h)
+add_library(3DorkEngine SHARED src/libmain.cpp src/libmain.h src/pch.h)
 
 find_package(OpenGL REQUIRED)
+
 
 target_link_directories(3DorkEngine PUBLIC
         ${GRAPHICS_LIBS}/GLFW/lib-mingw-w64/
@@ -25,6 +26,7 @@ target_link_libraries(3DorkEngine PUBLIC
 target_include_directories(3DorkEngine PUBLIC
         ${GRAPHICS_LIBS}/GLEW/include
         ${GRAPHICS_LIBS}/GLFW/include
+        "C:/Program Files (x86)/Windows Kits/10/Include/10.0.19041.0/um/gl"
         )
 
 

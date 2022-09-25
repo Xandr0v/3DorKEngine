@@ -5,10 +5,6 @@
 #include "3DorkEngine.h"
 
 
-
-
-
-
 void start()
 {
     std::cout << "start" << std::endl;
@@ -16,7 +12,7 @@ void start()
 
 void loop()
 {
-    drawTriangle();
+    dk::drawTriangle();
 }
 
 
