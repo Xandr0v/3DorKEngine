@@ -7,7 +7,7 @@
 
 void start()
 {
-    std::cout << "start" << std::endl;
+    std::cout << "sus" << std::endl;
 }
 
 void loop()
