@@ -1,9 +1,7 @@
 cmake_minimum_required(VERSION 3.24)
-project(game)
+project(3DKgame)
 set(CMAKE_CXX_STANDARD 14)
-
 set(EXECUTABLE_OUTPUT_PATH ${CMAKE_BINARY_DIR})
-add_executable(game application.cpp)
-
-target_link_libraries(game ${CMAKE_BINARY_DIR}/lib3DorkEngine.dll)
-target_include_directories(game PRIVATE 3DorkEngine/include)
+add_executable(3DKgame application.cpp)
+message(${CMAKE_BINARY_DIR})
+target_link_libraries(3DKgame ${CMAKE_BINARY_DIR}/lib3DKengine.dll)

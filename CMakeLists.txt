@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.24)
-project(3Dork)
+project(3DorKEngine)
 set(CMAKE_CXX_STANDARD 14)
-
+message(${CMAKE_BINARY_DIR})
 add_subdirectory(3DKengine)
 add_subdirectory(3DKgame)

@@ -1,15 +1,11 @@
 #pragma once
 #include "pch.h"
+
 namespace dk
 {
-
-    GLFWwindow* window;
-    void ErrorCallback(int, const char* err_str);
-    bool init(int x, int y, const char *name);
-
-    void startLoop(void (*loop)());
-
+    GLFWwindow *window;
+    unsigned int shaderProgram, VBO, VAO;
+    bool Init(int x, int y, const char *name);
+    int Main(void (*loop)());
     void drawTriangle();
-
-
 }

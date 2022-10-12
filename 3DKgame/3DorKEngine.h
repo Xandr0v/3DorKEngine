@@ -9,13 +9,13 @@
 #define NAME "name"
 #endif
 
+
+
 namespace dk
 {
-    void startLoop(void ());
-
+    void Init(int x, int y, const char *name);
+    int Main(void ());
     void drawTriangle();
-
-    void init(int x, int y, const char *name);
 }
 
 void start();
@@ -25,9 +25,9 @@ void loop();
 
 int main()
 {
-
-    dk::init(HEIGHT, WIDTH, NAME);
+    dk::Init(HEIGHT, WIDTH, NAME);
     start();
-    dk::startLoop(&loop);
+    dk::Main(&loop);
+
     return 0;
 }
