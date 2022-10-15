@@ -1,21 +1,13 @@
 #pragma once
-#ifndef WIDTH
-#define WIDTH 640
-#endif
-#ifndef HEIGHT
-#define HEIGHT 640
-#endif
-#ifndef NAME
-#define NAME "name"
-#endif
-
-
+#include <vector>
 
 namespace dk
 {
     void Init(int x, int y, const char *name);
     int Main(void ());
-    void drawTriangle();
+    void draw();
+    extern std::vector<float> vertices;
+    extern std::vector<unsigned int> indices;
 }
 
 void start();
@@ -25,9 +17,7 @@ void loop();
 
 int main()
 {
-    dk::Init(HEIGHT, WIDTH, NAME);
     start();
     dk::Main(&loop);
-
     return 0;
 }

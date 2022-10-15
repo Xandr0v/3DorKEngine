@@ -26,7 +26,7 @@ target_link_libraries(3DKengine PUBLIC
 target_include_directories(3DKengine PUBLIC
         ${GRAPHICS_LIBS}/GLEW/include
         ${GRAPHICS_LIBS}/GLFW/include
-        "C:/Program Files (x86)/Windows Kits/10/Include/10.0.19041.0/um/gl"
+        #"C:/Program Files (x86)/Windows Kits/10/Include/10.0.19041.0/um/gl"
         )
 
 
